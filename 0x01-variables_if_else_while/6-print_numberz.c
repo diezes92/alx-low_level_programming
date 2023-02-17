@@ -7,11 +7,13 @@
  */
 int main(void)
 {
-int ch = '0';
-while (ch <= 9)
+int i = '0';
+int j = 1;
+while (j <= 10)
 {
-putchar(ch);
-ch++;
+putchar(i);
+i++;
+j++;
 }
 putchar('\n');
 return (0);
