@@ -28,9 +28,9 @@ return (0);
 rd = read(fd, mem, letters);
 wr = write(STDOUT_FILENO, mem, rd);
 
-close(fd)
+close(fd);
 
-free(mem)
+free(mem);
 
 return (wr);
 
