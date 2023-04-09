@@ -16,13 +16,22 @@ char *mem;
 
 if (filename == NULL)
 return (0);
+
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
+
 mem = malloc(sizeof(char) * (letters));
 if (mem == NULL)
 return (0);
+
 rd = read(fd, mem, letters);
 wr = write(STDOUT_FILENO, mem, rd);
+
+close(fd)
+
+free(mem)
+
 return (wr);
+
 }
