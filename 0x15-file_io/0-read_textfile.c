@@ -19,7 +19,7 @@ return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 return (0);
-mem = malloc(sizeof(char) * letters);
+mem = malloc(sizeof(char) * (letters));
 if (mem == NULL)
 return (0);
 rd = read(fd, mem, letters);
