@@ -24,10 +24,10 @@ if (text_content)
 for (nb = 0; text_content[nb]; nb++)
 ;
 w = write(op, text_content, nb);
-if (rwr == -1)
+if (w == -1)
 return (-1);
 }
-close(fd);
+close(op);
 return (1);
 
 }
