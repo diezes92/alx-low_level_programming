@@ -16,7 +16,7 @@ if (filename == NULL)
 return (0);
 
 op = open(filename, O_RDONLY);
-if (fd == -1)
+if (op == -1)
 return (0);
 tmp = malloc(sizeof(char) * (letters));
 if (tmp == NULL)

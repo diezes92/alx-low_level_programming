@@ -26,7 +26,7 @@ w = write(op, text_content, nb);
 if (w == -1)
 return (-1);
 
-close(fd);
+close(op);
 return (1);
 
 }
